@@ -41,9 +41,8 @@ def get_C2(filepath):
     port = decryptConf(filepath=filepath,offset=944808)
     return "%s:%s" % ("".join(ip_domain),"".join(port))
 
-
 def main():
-    print "DecryptConf_10991 Result:"
+    print "Backdoor.Linux.Mayday.f DecryptConf Result:"
     path = 'sample'
     for item in [os.path.join(path,f) for f in os.listdir(path) if os.path.isfile(os.path.join(path,f))]:
         print "%s C2 is %s" % (item,get_C2(item))
