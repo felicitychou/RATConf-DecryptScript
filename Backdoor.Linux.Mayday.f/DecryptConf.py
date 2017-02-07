@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#-*-coding:utf8-*-
+
 import os
 
 def readhex(filepath,offset,end):
@@ -7,7 +10,6 @@ def readhex(filepath,offset,end):
     while True:
         byte = f.read(1)
         if byte == '':
-            #print "read end"
             break
         else:
             hexstr =  "%s" % byte.encode('hex')
@@ -15,9 +17,7 @@ def readhex(filepath,offset,end):
             if decnum != end:
                 result.append(decnum)
             else:
-                #print "meet end"
                 break
-            #print byte, hexstr, decnum
     f.close()
     return result
 
@@ -36,7 +36,6 @@ def decryptConf(filepath,offset):
     return result
 
 def get_C2(filepath): 
-    # get ip/domain
     ip_domain = decryptConf(filepath=filepath,offset=944768)
     port = decryptConf(filepath=filepath,offset=944808)
     return "%s:%s" % ("".join(ip_domain),"".join(port))
@@ -49,7 +48,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
