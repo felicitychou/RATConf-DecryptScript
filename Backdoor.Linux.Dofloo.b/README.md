@@ -2,7 +2,7 @@ virusname: Backdoor.Linux.Dofloo.b(Kaspersky) Trojan:Win32/Skeeyah.A!bit(Microso
 
 botsize: 1,870,048
 
-Botnet controller default port: 48080
+Botnet controller default port: 48080、50050
 
 ![](DecryptConf_Result.png)
 
