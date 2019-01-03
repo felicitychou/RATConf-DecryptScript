@@ -6,4 +6,5 @@ RAT Conf Decrypt Script
  - Trojan-DDoS.Linux.Znaich.a 
  - Trojan-DDoS.Linux.MrBlack.J
  - Backdoor.Linux.Dofloo.b
+ - Trojan-DDoS.Linux.Ddostf.a
 
