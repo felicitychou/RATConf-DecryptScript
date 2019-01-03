@@ -3,7 +3,6 @@
 
 import os
 
-
 confs = [
 {'filesize':(1058408,1048576,942080),'ip_offset':0xC1144,'port_offset':0xC1244},
 {'filesize':(649585,),'ip_offset':0x8c164,'port_offset':0x8c264},
@@ -13,7 +12,6 @@ confs = [
 {'filesize':(633684,),'ip_offset':0x7c0c4,'port_offset':0x7c1c4},
 
 ]
-
 IP_OFFSET = 0x0
 PORT_OFFSET = 0x0
 
